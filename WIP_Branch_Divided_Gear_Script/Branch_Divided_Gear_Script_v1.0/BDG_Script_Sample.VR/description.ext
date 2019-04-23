@@ -1,0 +1,22 @@
+class Header
+{
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 9;
+};
+
+respawn = "BIRD";
+respawndelay = 4;
+respawnDialog = 0;
+disableChannels[]={0,1,2,4};
+//0 = Global 1Side 2Command 3Group 4Vehicle 5Direct 6System
+disabledAI = 0;
+
+author = michy;
+onLoadName = "BDG Script Sample";
+onLoadMission = "<t color='#DA70D6'>edit by michy </t>";
+
+showGPS = 1;
+showMap = 1;
+showPad = 1;
+showWatch = 1;

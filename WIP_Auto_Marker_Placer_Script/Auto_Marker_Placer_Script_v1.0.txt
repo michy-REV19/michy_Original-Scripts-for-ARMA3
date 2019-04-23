@@ -1,0 +1,43 @@
+/*
+	Auto Marker Placer Script by michy_REV19
+	v0.9 Updated 2018/10/08
+	Description:
+	Contact (Twitter): @michy_REV19
+*/
+
+
+//Execution condition
+
+
+//Getting and selection of marker
+allMarkers = allMapMarkers;
+allPlacedMarkers = [];
+
+{
+	private "_markerName";
+	_markerName = toArray _x;
+	_markerName resize 15;
+	_markerName = toString _markerName;
+	if (_markerName == "_USER_DEFINED #") then {
+		allPlacedMarkers pushBack _x;
+	};
+} forEach allMarkers;
+
+//Creating user placed marker
+{
+	private "_markerName";
+	_markerName = format ["apmarker_%1_%2", (getPlayerUID player), _forEachIndex];
+	createMarker [_markerName, get];
+	
+} forEach allPlacedMarkers;
+
+
+
+
+
+ = getMarkerType	_x;
+ = getMarkerPos		_x;
+ = getMarkerSize	_x;
+ = getMarkerColor	_x;
+ 
+ 

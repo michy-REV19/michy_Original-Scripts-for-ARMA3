@@ -1,0 +1,1 @@
+{[_x] execVM "scripts\BDarsenal.sqf";} forEach [a1,a2];
